@@ -210,8 +210,6 @@ hr {
     color: white;
 }
 
-/*Hero-Section*/
-
 /*After-Course-Creation*/
 .course-creation-section .caption p{
     font-size: 1.3rem;
@@ -231,6 +229,36 @@ hr {
 }
 
 .caption p {
+    width: 200px;
+    margin-top: 1em;
+    color: #898989;
+}
+
+.container-join {
+    background-color: white;
+    padding-top: 3em;
+    margin-top: -2em;
+    height: 115rem;
+}
+
+.container-join p {
+    font-size: 1.4rem;
+    width: 245px;
+    color: #898989;
+}
+
+.container-join-inner {
+    margin-top: 2em 0 2rem 7rem;
+    background-color: white;
+    font-size: 1rem;
+}
+
+.container-join-inner h3 {
+    width: 250px;
+    font-weight: bold;
+}
+
+.container-join-inner p {
     width: 200px;
     margin-top: 1em;
     color: #898989;
@@ -308,37 +336,6 @@ hr {
     background-color: white;
 }
 
-/*Join-Section*/
-.container-join {
-    background-color: white;
-    padding-top: 3em;
-    margin-top: -2em;
-    height: 115rem;
-}
-
-.container-join p {
-    font-size: 1.4rem;
-    width: 245px;
-    color: #898989;
-}
-
-.container-join-inner {
-    margin-top: 2em 0 2rem 7rem;
-    background-color: white;
-    font-size: 1rem;
-}
-
-.container-join-inner h3 {
-    width: 250px; 
-    font-weight: bold;
-}
-
-.container-join-inner p {
-    width: 200px;
-    margin-top: 1em;
-    color: #898989;
-}
-
 /*Format-Section*/
 .format {
     background-color: white;
@@ -382,6 +379,14 @@ hr {
     border: solid 1px #9A9A9A;
 }
 
+.container-format {
+    margin-top: 2em;
+}
+
+.container-format p {
+    color: #898989;
+}
+
 /*Prices-Section*/
 .prices-section {
     background-color: white;
@@ -414,15 +419,6 @@ hr {
     width: 315px;
     height: 315px;
     transform: scale(1.01);
-}
-
-/*Course-Format-Section*/
-.container-format {
-    margin-top: 2em;
-}
-
-.container-format p  {
-    color: #898989;
 }
 
 /*Submit-Form*/
@@ -490,6 +486,26 @@ form input::placeholder {
     background-color: #B61E4F;
 }
 
+.form {
+    background-color: #0D6988;
+    border-radius: 1em;
+}
+
+
+form input::placeholder {
+    color: rgb(137, 137, 137, 0.7);
+    font-family: 'Inika', sans-serif;
+    font-size: 1.3rem;
+}
+
+.container-course p {
+    font-weight: bold;
+}
+
+.btn-submit {
+    font-weight: bold;
+}
+
 /*Buttons*/
 .btn-danger {
     background-color: #CC2058;
@@ -548,27 +564,6 @@ form input::placeholder {
     
 .learn-more>circle-element:hover {
     background-color: #B61E4F;
-}
-
-/*Submit-Form*/
-.form {
-    background-color: #0D6988;
-    border-radius: 1em;
-}
-
-
-form input::placeholder {
-    color: rgb(137, 137, 137, 0.7);
-    font-family: 'Inika', sans-serif;
-    font-size: 1.3rem;
-}
-
-.container-course p {
-    font-weight: bold;
-}
-
-.btn-submit {
-    font-weight: bold;
 }
 
 @media (max-width: 1200px) {
