@@ -1,0 +1,716 @@
+@font-face {
+    font-display: swap;
+    font-family: 'Merriweather Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: local(''),
+        url('/merriweather-fonts/merriweather-sans-v26-latin-regular.woff2') format('woff2'),
+        url('/merriweather-fonts/merriweather-sans-v26-latin-regular.woff') format('woff');
+}
+
+@font-face {
+    font-display: swap;
+    font-family: 'Merriweather Sans';
+    font-style: normal;
+    font-weight: 700;
+    src: local(''),
+    url('/merriweather-fonts/merriweather-sans-v26-latin-700.woff2') format('woff2'),
+    url('/merriweather-fonts/merriweather-sans-v26-latin-700.woff') format('woff');
+}
+
+@font-face {
+    font-display: swap;
+    font-family: 'Inika';
+    font-style: normal;
+    font-weight: 400;
+    src: local(''),
+        url('/inika/inika-v21-latin-regular.woff2') format('woff2'),
+        url('/inika/inika-v21-latin-regular.woff') format('woff');
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body,
+html {
+    margin: 0;
+    padding: 0;
+    background-color: #0D6988;
+    scroll-behavior: smooth;
+    height: 100%;
+    font-family: 'Merriweather Sans', Roboto, sans-serif;
+}
+
+body {
+    height: auto;
+    font-family: 'Merriweather', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+/*Headings*/
+h1 {
+    font-size: 5.6rem;
+    color: white;
+    margin: 3rem 0 3rem 0;
+}
+
+h2 {
+    font-weight: bold;
+    color: #000;
+    padding-top: 2em;
+    margin: 0 0 4rem 0;
+    font-size: 35px;
+}
+
+h3 {
+    font-weight: bold;
+    margin-top: 1em;
+}
+
+/*Navigation*/
+.navbar-brand img {
+    max-width: 228px;
+    max-height: 64px;
+}
+
+.navbar-toggler-icon {
+    width: 20px;
+}
+
+.navbar-nav {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.navbar-nav .nav-item a {
+    color: rgba(229, 234, 235, 0.5);
+    font-size: 1.5rem;
+    font-family: 'Inika';
+    margin-right: 2rem;
+}
+
+.navbar-nav .nav-item a:hover,
+.navbar-nav .nav-item a:focus {
+    color: rgba(229, 234, 235, 0.8);
+}
+
+.sign-up-btn {
+    font-family: 'Inika';
+    background-color: #0D6988;
+    border: solid 2px white;
+    color: rgba(229, 234, 235, 0.7);
+    width: 85px;
+    height: 35px;
+    font-size: 1.3rem;
+    border: rgba(229, 234, 235, 0.7) solid 1px;
+    border-radius: 25px;
+    transition: background-color .3s ease-in-out;
+}
+
+.sign-up-btn:hover,
+.sign-up-btn:focus {
+    background-color: rgb(255, 255, 255,0.1);
+}
+
+
+.navbar-toggler {
+    border: none;
+}
+
+hr {
+    border-top: rgb(229, 234, 235, 0.3) solid 3px;
+}
+
+/*Hero-Section*/
+.hero-col-1 {
+    padding-right: 15rem;
+}
+
+.hero-section {
+    margin-top: 5rem;
+    height: 40rem;
+}
+
+.hero-section .row {
+    margin: 0;
+    align-items: center;
+}
+
+.half-round-decor {
+    width: 42px;
+    margin-bottom: 1rem;
+}
+
+.hero-col-2 {
+    background-color: white;
+    height: 226px;
+    width: 312px;
+    border-radius: 30px;
+    position: relative;
+    padding: 7rem 5rem;
+    margin-top: 5rem;
+}
+
+.hero-col-2 .inner {
+    display: flex;
+    flex-direction: column;
+}
+
+.hero-col-2 .inner p {
+    font-size: 1.5rem;
+    color: #898989;
+}
+
+
+.side-image {
+    position: absolute;
+    left: 240px;
+    top: -50px;
+
+}
+
+.side-image img {
+    width: 120px;
+    height: 120px;
+}
+
+.learn-more {
+    display: flex;
+    align-items: center;
+    padding: 12px 25px;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: rgba(255,255,255,0.8);
+    border-radius: 40px;
+    width: 140px;
+    font-size: 1.35rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+.learn-more .circle-element {
+    background-color: rgb(204, 32, 88);
+    content: '';
+    display: block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin-right: 1rem;
+    transition: background-color .3s ease-in-out;
+}
+    
+.learn-more .circle-element:hover {
+    background-color: #B61E4F;
+}
+
+.text-block {
+    color: white;
+}
+
+/*Hero-Section*/
+
+/*After-Course-Creation*/
+.course-creation-section .caption p{
+    font-size: 1.3rem;
+    color: rgb(0, 0, 0, 0.8);
+}
+
+.course-creation-section img {
+    width: 34px;
+    height: 54px;
+}
+
+/*Join-Section*/
+.caption h3 {
+    width: 200px;
+    font-weight: bold;
+    margin-top: 3.5rem;
+}
+
+.caption p {
+    width: 200px;
+    margin-top: 1em;
+    color: #898989;
+}
+
+/*Course-Benefits-Section*/
+.course-format-container .learn-more {
+    width: 140px;
+    margin-top: 4rem;
+}
+
+.course-format-container .learn-more span {
+    font-size: 1.35rem;
+    color: rgba(255,255,255,0.8);
+}
+
+
+.course-format-container h2 {
+    font-size: 40px;
+    font-weight: bold; 
+    color: white;
+    margin-top: 1em 0 7rem 0;
+}
+
+.course-format-container h3 {
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #0D6988;
+}
+
+.course-format-container span {
+    font-size: 2rem;
+    color: #898989;
+}
+
+.course-creation-section {
+    height: 45rem;
+    
+}
+
+.course-format-container .btn-danger {
+    margin: 6rem 0 10rem 0;
+    font-size: 1.6rem;
+    padding: 1.7rem 1.5rem;
+}
+.course-creation-div {
+    border: solid 3px rgba(13, 105, 136, 0.05);
+    padding: 2em; 
+    border-radius: 1em;
+    height: 170px;
+}
+
+.course-creation-div p {
+    width: 150px;
+    margin-top: 1em;
+}
+
+.course-creation-div .caption p{
+    margin-top: 1em;
+    color: rgba(0, 0, 0, 0.8);
+}
+
+.course-creation-section {
+    background-color: white;
+}
+
+.course-creation-section h2 {
+    font-weight: bold; 
+    margin-bottom: 2em;
+}
+
+.course-creation-section inner {
+    margin-top: 2em;
+    background-color: white;
+}
+
+/*Join-Section*/
+.container-join {
+    background-color: white;
+    padding-top: 3em;
+    margin-top: -2em;
+    height: 115rem;
+}
+
+.container-join p {
+    font-size: 1.4rem;
+    width: 245px;
+    color: #898989;
+}
+
+.container-join-inner {
+    margin-top: 2em 0 2rem 7rem;
+    background-color: white;
+    font-size: 1rem;
+}
+
+.container-join-inner h3 {
+    width: 250px; 
+    font-weight: bold;
+}
+
+.container-join-inner p {
+    width: 200px;
+    margin-top: 1em;
+    color: #898989;
+}
+
+/*Format-Section*/
+.format {
+    background-color: white;
+    border-radius: 30px;
+    width: 100%;
+    height: 190px;
+    padding: 4rem 5rem;
+    transform: scale(1);
+    transition: .3s ease-in-out;
+}
+
+.format:hover {
+    transform: scale(1.01);
+
+}
+
+.course-format-container .d-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.format:first-child {
+    margin-bottom: 2rem;
+}
+
+/*Course-Benefits-Section*/
+.course-benefits-section p {
+    font-size: 1.3rem;
+    padding: 1rem 0 1rem 0;
+}
+
+.course-benefits-section {
+    background-color: white;
+    margin-bottom: -1rem;
+}
+
+
+.course-benefits-section hr {
+    border: solid 1px #9A9A9A;
+}
+
+/*Prices-Section*/
+.prices-section {
+    background-color: white;
+    height: 70rem;
+}
+
+.prices-section p {
+    font-size: 1.5rem;
+}
+
+.price-options {
+    margin-top: 2em;
+    background-color: white;
+}
+
+.price-options p {
+    width: 250px;
+    margin-top: 1em;
+    color: #898989;
+}
+
+.price-description img {
+    width: 315px;
+    height: 315px;
+    transform: scale(1);
+    transition: .3s ease-in-out;
+}
+
+.price-description img:hover{
+    width: 315px;
+    height: 315px;
+    transform: scale(1.01);
+}
+
+/*Course-Format-Section*/
+.container-format {
+    margin-top: 2em;
+}
+
+.container-format p  {
+    color: #898989;
+}
+
+/*Submit-Form*/
+.form-submission {
+    margin-top: 7.9rem;
+    height: 72rem;
+}
+
+.form-submission .circle-element {
+    background-color: rgb(204, 32, 88);
+    transition: background-color .3s ease-in-out ;
+}
+
+
+.learn-more:hover .circle-element {
+    background-color: #B61E4F;
+}
+
+
+.form-submission form {
+    background-color: white;
+    width: 400px;
+    height: 500px;
+    border-radius: 30px;
+    padding: 3rem;
+    margin-top: 2.4rem;
+}
+
+.form-submission h2 {
+    font-size: 2.2rem;
+}
+
+form input {
+    background-color: rgb(229, 234, 235, 0.5);
+    border: none;
+    width: 330px;
+    height: 52px;
+    border-radius: 10px;
+}
+
+form input::placeholder {
+    padding-left: 2rem;
+}
+
+.form-submission .btn-submit {
+    margin-top: 2rem;
+}
+
+.info-mobile {
+    display: none;
+}
+
+.btn-submit {
+    border: none;
+    background-color: rgb(204, 32, 88);
+    width: 110px;
+    height: 35px;
+    color: white;
+    border-radius: 40px;
+    font-size: 1.6rem;
+    transition: background-color .3s ease-in-out;
+}
+
+.btn-submit:hover {
+    background-color: #B61E4F;
+}
+
+/*Buttons*/
+.btn-danger {
+    background-color: #CC2058;
+    border: none;
+    border-radius: 3em;
+    font-weight: bold;
+    padding: 1.5em 1em;
+    width: 250px;
+    margin-top: 3em 0 4rem 0;
+    transition: background-color .3s ease-in-out;
+}
+    
+.btn-danger:hover {
+    background-color: #B61E4F;
+
+}
+
+.btn-light {
+    background-color: white;
+}
+
+.btn-light {
+    border: none;
+    border-radius: 2em;
+    font-weight: bold;
+    padding: 1em;
+    width: 150px;
+    margin-top: 2em 0 4rem 0;
+    width: 190px;
+}
+    
+.hero-h1-decor{
+    width: 34px;
+    height: 38px;
+    margin-right: 2rem;
+}
+
+.hero-section a button {
+    width: 165px;
+    font-size: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.hero-text {
+    display: flex;
+}
+
+.hero-text p {
+    font-size: 1.3rem;
+    width: 320px;
+}
+
+.learn-more>circle-element {
+    background-color: #CC2058;
+}
+    
+.learn-more>circle-element:hover {
+    background-color: #B61E4F;
+}
+
+/*Submit-Form*/
+.form {
+    background-color: #0D6988;
+    border-radius: 1em;
+}
+
+
+form input::placeholder {
+    color: rgb(137, 137, 137, 0.7);
+    font-family: 'Inika', sans-serif;
+    font-size: 1.3rem;
+}
+
+.container-course p {
+    font-weight: bold;
+}
+
+.btn-submit {
+    font-weight: bold;
+}
+
+@media (max-width: 1200px) {
+    .container-join {
+        height: 200rem;
+    }
+
+    .hero-section {
+        height: 50rem;
+    }
+
+    .prices-section {
+        height: 180rem;
+    }
+
+    .price-description {
+        margin-bottom: 8rem;
+    }
+}
+
+@media (max-width: 992px) {
+    .course-creation-section {
+            height: 90rem;
+        }
+
+    .hero-section {
+        height: 70rem;
+    }
+
+    .prices-section {
+        height: 180rem;
+    }
+
+    .course-creation-div {
+        margin-bottom: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .course-format-container .btn-danger {
+        width: 100%;
+        height: 80px;
+    }
+
+    h2 {
+        font-size: 3rem;
+    }
+
+    .course-creation-div {
+        width: 100%;
+    }
+
+    .hero-section {
+        height: 64rem;
+    }
+
+    h1 {
+        font-size: 4rem;
+    }
+
+    .hero-col-1 {
+            padding-right: 5rem;
+    }
+
+    .side-image img {
+        width: 80px;
+    }
+
+    .hero-col-2 {
+        padding: 7rem 2rem;
+        border-radius: 2rem;
+        height: 20px;
+        width: 100%;
+    }
+
+    .hero-col-2 .inner {
+        margin-top: -5rem;
+    }
+
+    .hero-h1-decor {
+        display: none;
+    }
+
+    .sign-up-btn {
+        display: none;
+    }
+
+    .form-submission form {
+        background-color: #0D6988;
+        width: 100%;
+    }
+
+    .form-submission form input {
+        width: 100%;
+        background-color: #FFF;
+        border-radius: 5px;
+    }
+
+    .form-submission h2 {
+        color: white;
+        font-size: 2.2rem;
+    }
+
+    .btn-submit {
+        width: 100%;
+        height: 70px;
+        font-weight: bold;
+    }
+
+    .info-mobile {
+        display: flex;
+    }
+
+    .info-desktop {
+        display: none;
+    }
+
+    form .btn-submit {
+        margin-top: 3rem;
+    }
+    
+    .div-element img {
+        width: 300px;
+    }
+
+    .hero-section a button {
+        height: 80px;
+        width: 100%;
+        border-radius: 50px;
+        font-size: 2rem;
+        margin-top: 2.5rem;
+    }
+
+    .container-join {
+        height: 165rem;
+    }
+}
+
+@media (max-width: 576px) {
+    hr {
+            width: 340px;
+            margin: 0 auto;
+        }
+}
+
